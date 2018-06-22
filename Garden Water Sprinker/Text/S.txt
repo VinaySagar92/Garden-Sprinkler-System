@@ -1,0 +1,2 @@
+S,Tuesday,15,15,15,1
+S,Wednesday,19,30,28,3

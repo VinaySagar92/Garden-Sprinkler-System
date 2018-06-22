@@ -1,0 +1,119 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 480104 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=16748, tid=0x0000000000001550
+#
+# JRE version:  (8.0_111-b14) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.111-b14 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00000000022d2800):  JavaThread "Unknown thread" [_thread_in_vm, id=5456, stack(0x0000000002120000,0x0000000002220000)]
+
+Stack: [0x0000000002120000,0x0000000002220000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x00000000022d2800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=5456, stack(0x0000000002120000,0x0000000002220000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff795010000 - 0x00007ff795047000 	C:\Program Files\Java\jre1.8.0_111\bin\javaw.exe
+0x00007ffd663b0000 - 0x00007ffd66581000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffd660c0000 - 0x00007ffd6616b000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffd62f80000 - 0x00007ffd6319d000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffd66010000 - 0x00007ffd660b2000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffd65a00000 - 0x00007ffd65a9e000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffd65fb0000 - 0x00007ffd66009000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffd66170000 - 0x00007ffd66291000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffd65aa0000 - 0x00007ffd65c05000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffd63250000 - 0x00007ffd6326e000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffd659c0000 - 0x00007ffd659f4000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffd634f0000 - 0x00007ffd63672000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffd5e890000 - 0x00007ffd5eb09000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.14393.447_none_42191651c6827bb3\COMCTL32.dll
+0x00007ffd656f0000 - 0x00007ffd659b7000 	C:\WINDOWS\System32\combase.dll
+0x00007ffd63390000 - 0x00007ffd63485000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffd63270000 - 0x00007ffd632da000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffd63940000 - 0x00007ffd6396e000 	C:\WINDOWS\System32\IMM32.DLL
+0x0000000062390000 - 0x0000000062462000 	C:\Program Files\Java\jre1.8.0_111\bin\msvcr100.dll
+0x00000000614f0000 - 0x0000000061d8a000 	C:\Program Files\Java\jre1.8.0_111\bin\server\jvm.dll
+0x00007ffd63970000 - 0x00007ffd63978000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffd5a5d0000 - 0x00007ffd5a5d9000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffd60a10000 - 0x00007ffd60a33000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffd66340000 - 0x00007ffd663aa000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffd5ec20000 - 0x00007ffd5ec2a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffd60750000 - 0x00007ffd6077b000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x00007ffd63680000 - 0x00007ffd636c2000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x0000000062af0000 - 0x0000000062aff000 	C:\Program Files\Java\jre1.8.0_111\bin\verify.dll
+0x0000000062570000 - 0x0000000062599000 	C:\Program Files\Java\jre1.8.0_111\bin\java.dll
+0x0000000062550000 - 0x0000000062566000 	C:\Program Files\Java\jre1.8.0_111\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=Cp1252 
+java_command: Main
+java_class_path (initial): C:\Users\VINAY\workspace\HummingbeeSprinklerSystem\bin
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.8.0_102
+CLASSPATH=.;
+PATH=C:/Program Files/Java/jre1.8.0_111/bin/server;C:/Program Files/Java/jre1.8.0_111/bin;C:/Program Files/Java/jre1.8.0_111/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\PROGRAM FILES\BROADCOM\BROADCOM 802.11 NETWORK ADAPTER;C:\PROGRAM FILES (X86)\NVIDIA CORPORATION\PHYSX\COMMON;C:\PROGRAM FILES (X86)\INTEL\ICLS CLIENT\;C:\PROGRAM FILES\INTEL\ICLS CLIENT\;C:\WINDOWS\SYSTEM32;C:\WINDOWS;C:\WINDOWS\SYSTEM32\WBEM;C:\WINDOWS\SYSTEM32\WINDOWSPOWERSHELL\V1.0\;C:\PROGRAM FILES (X86)\INTEL\OPENCL SDK\2.0\BIN\X86;C:\PROGRAM FILES (X86)\INTEL\OPENCL SDK\2.0\BIN\X64;C:\PROGRAM FILES\SONY\VAIO IMPROVEMENT;C:\PROGRAM FILES (X86)\SONY\VAIO BIOS DATA TRANSFER UTILITY\;C:\PROGRAM FILES (X86)\SONY\VAIO STARTUP SETTING TOOL;C:\PROGRAM FILES\INTEL\INTEL(R) MANAGEMENT ENGINE COMPONENTS\DAL;C:\PROGRAM FILES\INTEL\INTEL(R) MANAGEMENT ENGINE COMPONENTS\IPT;C:\PROGRAM FILES (X86)\INTEL\INTEL(R) MANAGEMENT ENGINE COMPONENTS\DAL;C:\PROGRAM FILES (X86)\INTEL\INTEL(R) MANAGEMENT ENGINE COMPONENTS\IPT;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\Java\jdk1.8.0_102\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Users\VINAY\AppData\Local\Microsoft\WindowsApps;;C:\Users\VINAY\eclipse\java-neon\eclipse;
+USERNAME=VINAY
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 14393 (10.0.14393.0)
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, aes, clmul, erms, ht, tsc, tscinvbit, tscinv
+
+Memory: 4k page, physical 4070196k(858668k free), swap 15863856k(5460k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.111-b14) for windows-amd64 JRE (1.8.0_111-b14), built on Sep 22 2016 19:24:05 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Sun Dec 04 03:05:51 2016
+elapsed time: 0 seconds (0d 0h 0m 0s)
+
